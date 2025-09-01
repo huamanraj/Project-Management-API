@@ -57,8 +57,8 @@ A comprehensive backend service for a simplified project management platform bui
 1. **Clone the repository:**
 
 ```bash
-git clone <repository-url>
-cd project-management-backend
+git clone https://github.com/huamanraj/Project-Management-API
+cd Project-Management-API
 ```
 
 2. **Install dependencies:**
@@ -154,7 +154,7 @@ npm run test:integration
 http://localhost:3000/api
 
 # Deployed API (Live Demo)
-https://your-deployed-api.herokuapp.com/api
+https://projectmanagementapi.vercel.app/api
 ```
 
 
@@ -293,7 +293,7 @@ src/
 
 ### Live Deployment
 
-**Current Deployment:** [https://your-deployed-api.herokuapp.com](https://your-deployed-api.herokuapp.com)
+**Current Deployment:** https://projectmanagementapi.vercel.app
 
 
 
@@ -327,8 +327,8 @@ GET /health
 
 ### Live API Testing
 
-- **API Base URL:** https://your-deployed-api.herokuapp.com/api
-- **Health Check:** https://your-deployed-api.herokuapp.com/health
+- **API Base URL:** https://projectmanagementapi.vercel.app/api
+- **Health Check:** https://projectmanagementapi.vercel.app/health
 
 
 
