@@ -18,7 +18,7 @@ const apiLimiter = rateLimit({
 
 // Strict rate limiter for authentication endpoints
 const authLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
+  windowMs: 35 * 60 * 1000, // 35 minutes
   max: config.rateLimit.authMaxRequests, // 5 requests per windowMs
   message: {
     success: false,
@@ -52,7 +52,7 @@ const paymentLimiter = rateLimit({
 // Create account limiter (very strict)
 const createAccountLimiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour
-  max: 3, // 3 account creation attempts per hour per IP
+  max: 13, // 3 account creation attempts per hour per IP
   message: {
     success: false,
     error: {
@@ -68,7 +68,7 @@ const createAccountLimiter = rateLimit({
 // Password reset limiter
 const passwordResetLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 3, // 3 password reset attempts per 15 minutes
+  max: 13, // 3 password reset attempts per 15 minutes
   message: {
     success: false,
     error: {
